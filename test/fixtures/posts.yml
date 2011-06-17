@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id_sender: 1
+  id_owner: 1
+  comment: MyText
+
+two:
+  id_sender: 1
+  id_owner: 1
+  comment: MyText

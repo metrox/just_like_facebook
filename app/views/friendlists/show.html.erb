@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id user:</b>
+  <%= @friendlist.id_user %>
+</p>
+
+<p>
+  <b>Id friend:</b>
+  <%= @friendlist.id_friend %>
+</p>
+
+<p>
+  <b>User approved:</b>
+  <%= @friendlist.user_approved %>
+</p>
+
+<p>
+  <b>Friend approved:</b>
+  <%= @friendlist.friend_approved %>
+</p>
+
+
+<%= link_to 'Edit', edit_friendlist_path(@friendlist) %> |
+<%= link_to 'Back', friendlists_path %>

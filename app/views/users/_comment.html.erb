@@ -1,0 +1,6 @@
+<%= form_for Post.new do |f| %>
+    <%= hidden_field_tag(:id_owner, @profil.id) %>
+    <%= f.text_area :comment %><br />
+
+    <%= submit_tag "Comment" %>
+<% end %>

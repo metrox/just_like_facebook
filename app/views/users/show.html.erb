@@ -1,0 +1,39 @@
+<div class="profil_name">
+Profil uzytkownika: <%= @profil.username %><br />
+</div>
+
+Witaj panie: <%= current_user.username %><br />
+<div class="main">
+  <% @posts.each do |post| %>
+    <tr>
+      <div class="author">
+        <td>
+          <%= author(post.id_sender) %>    
+          <% if (current_user.id == post.id_owner) or (current_user.id == post.id_sender) %>
+            <div class="destroy">
+              <%= link_to 'Destroy', post, :method => :delete, :confirm => 'Are you sure?' %>
+
+            </div>
+          <% end %>
+       </td>
+     </div>
+   
+     <div class="comment">
+       <td>
+         <%= post.comment %>
+       </td>
+     </div>
+   </tr>
+  <% end %>
+  <div class="komcie">
+    <%= render 'comment' %>
+  </div>
+</div>
+
+<div class="friends">
+  Znajomi<br />
+</div>
+   <% friends = friend_finder(@friendlist, @profil.id) %>
+   <% friends.each do |friend| %>
+     <%= friend.username %><br />
+   <% end %>

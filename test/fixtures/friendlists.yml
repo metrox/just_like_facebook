@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id_user: 1
+  id_friend: 1
+  user_approved: false
+  friend_approved: false
+
+two:
+  id_user: 1
+  id_friend: 1
+  user_approved: false
+  friend_approved: false
