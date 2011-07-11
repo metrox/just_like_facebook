@@ -31,7 +31,12 @@ Witaj panie: <%= current_user.username %><br />
 </div>
 
 <div class="friends">
+<<<<<<< HEAD
+  Znajomi<br />
+  
+=======
   Znajomi<br />  
+>>>>>>> a6c43374590b85a579ab63eabc18fa2081dab6a9
    <!-- lista znajomych -->
    <% friends_profil = '0' %>
    <% friends = friend_finder(@friendlist, @profil.id) %>
@@ -43,6 +48,12 @@ Witaj panie: <%= current_user.username %><br />
      <% end %>
    <% end %>
 </div>
+<<<<<<< HEAD
+
+   <!-- Dodawanie do znajomych -->
+  
+  <% if (friends_profil == '0') && (@profil.id != current_user.id) %>
+=======
   <!-- testowe sprawdzenie  -->
    <% @friendlist.each do |friend| %>
      <%= friend.id_user %>
@@ -51,12 +62,16 @@ Witaj panie: <%= current_user.username %><br />
    <!-- Dodawanie do znajomych -->
   
   <% if (friends_profil == '0') && (current_user.id != @profil.id) %>
+>>>>>>> a6c43374590b85a579ab63eabc18fa2081dab6a9
    <div class="add_friend">
      <%= render 'add_to_friend' %>
    </div>
   <% end %>
+<<<<<<< HEAD
+=======
 </div>
    <% friends = friend_finder(@friendlist, @profil.id) %>
    <% friends.each do |friend| %>
      <%= friend.username %><br />
    <% end %>
+>>>>>>> a6c43374590b85a579ab63eabc18fa2081dab6a9

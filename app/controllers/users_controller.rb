@@ -30,7 +30,10 @@ class UsersController < ApplicationController
     @posts = Post.where(:id_owner => @id)
     @author = User.find(@id)
     @friendlist = Friendlist.where(:id_friend == @profil.id || :id_user == @profil.id)
+<<<<<<< HEAD
+=======
     @friendlist = Friendlist.where(:id_friend == @profil.id ||  :id_user == @profil.id)
+>>>>>>> a6c43374590b85a579ab63eabc18fa2081dab6a9
     
     respond_to do |format|
       format.html # show.html.erb

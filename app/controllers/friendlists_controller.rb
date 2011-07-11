@@ -42,8 +42,11 @@ class FriendlistsController < ApplicationController
     @friendlist = Friendlist.new
     @friendlist[:id_user] = current_user.id
     @friendlist[:id_friend] = params[:id_friend]
+<<<<<<< HEAD
+=======
     @friendlist = Friendlist.new(params[:friendlist])
 
+>>>>>>> a6c43374590b85a579ab63eabc18fa2081dab6a9
     respond_to do |format|
       if @friendlist.save
         format.html { redirect_to(@friendlist, :notice => 'Friendlist was successfully created.') }

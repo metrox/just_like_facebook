@@ -16,8 +16,12 @@ module UsersHelper
 <<<<<<< HEAD
     User.where(:id => friends_list)
 =======
+<<<<<<< HEAD
+    User.where(:id => friends_list)
+=======
      User.where(:id => friends_list)
 >>>>>>> 454cc998c5539ed6d2c06322bcd51d4db10c4b9b
+>>>>>>> a6c43374590b85a579ab63eabc18fa2081dab6a9
   end
 
 end
