@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>Simple site</title>
+
+
+       <%= stylesheet_link_tag "application", "my_style"%>
+       <%= stylesheet_link_tag "http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" %>
+       <%= javascript_include_tag "http://code.jquery.com/jquery-1.5.2.min.js" %>
+       <%= javascript_include_tag "http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js" %>
+
+       <%= javascript_include_tag "jquery-1.6.1.js" %>
+       <%= stylesheet_link_tag "jquery.mobile-1.0a4.1.min.css" %>
+
+       <script type="text/javascript">var $j = jQuery.noConflict();</script>
+       <%= javascript_include_tag :defaults %>
+     <%= csrf_meta_tag %>
+    <%= yield(:head) %>
+  </head>
+<body>
+
+<div data-role="page" id="page1">
+  <div data-role="header" data-position="fixed">
+    <h1><%= link_to 'Main', :index %></h1>
+      <% if logged_in? %>
+        <%= link_to 'Logout', :logout, "data-icon" => "delete", "class" => "ui-btn-right" %>
+      <% else %>
+        <%= link_to 'Sign up', signup_path, "data-icon" => "plus" %>
+        <%= link_to 'Log in', login_path, "data-icon" => "plus" %>
+      <% end %>
+  </div>
+
+  <div data-role="content">
+
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <% end %>
+      <%= content_tag :h1, yield(:title) if show_title? %>
+      <%= yield %>
+  </div>
+
+  <div data-role="footer">
+   <h1>Footer Bar</h1>
+   </div><!-- /footer -->
+
+</div><!-- /page -->
+
+  </body>
+</html>

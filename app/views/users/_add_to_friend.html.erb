@@ -1,0 +1,4 @@
+<%= form_for Friendlist.new do |f| %>
+    <%= hidden_field_tag(:id_friend, @profil.id) %>
+    <%= submit_tag "Add to friend" %>
+<% end %>

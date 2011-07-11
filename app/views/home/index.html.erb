@@ -1,0 +1,37 @@
+<div class="logo">
+<p> LOGO </p>
+</div>
+<hr/>
+
+<table>
+  <th>
+    <div class="content">
+      <p>
+Lorem ipsum dolor sit amet, posuere hendrerit, nec vel pede, nonummy scelerisque nulla congue cursus, mauris sem id interdum sed tellus. Volutpat diam quisque neque convallis luctus, sollicitudin quis nulla lacus, tortor eget a donec lectus ut. Nibh cras eget et justo arcu, adipiscing vitae, pellentesque et. Ultricies enim suspendisse vulputate facilisis, ultrices dapibus metus in id, velit dui nulla. Non sed ipsum leo nec viverra et, donec accumsan sapien lacus aenean cras interdum. Sit integer pretium phasellus auctor eu odio, pulvinar felis diam tortor aenean adipiscing ipsum. Sit malesuada ullamcorper accumsan vulputate euismod sed, ultricies purus sed quis blandit aliquam, felis sollicitudin netus diam rhoncus nulla et, vel sollicitudin posuere donec curabitur, et pellentesque. Commodo urna pharetra, wisi facilisi. Enim fringilla, odio tortor diam enim orci, id iaculis dignissim et praesent.
+     </p>
+     <p>
+Magnis quis id duis posuere mauris, in orci pellentesque morbi laoreet, in vestibulum at imperdiet libero urna vitae, nulla fermentum, donec in at felis sapien curabitur ac. Lectus tempor nunc, condimentum pede viverra elementum cras massa, id vivamus, mattis nec donec maecenas. Dictum ut nunc aenean dis enim dui, velit sollicitudin ac erat mauris viverra nec, ut ipsum dui dictum rutrum mollis, eros purus ipsam maecenas duis dolor, luctus sociis eleifend justo lectus accumsan tortor. Phasellus ligula sit a, erat hac arcu et ornare, velit pede, nec metus, vestibulum posuere velit donec. Aliquam semper montes aenean risus. Eget elit dui eget non justo in, ante sed, fringilla fringilla dis dui, amet in pellentesque lacus lacus, sed cursus. Sit dui in luctus, felis varius in nec est magna, vulputate vestibulum libero.
+     </p>
+     <p>
+Iaculis vestibulum penatibus, erat ante libero turpis libero, elit eu in erat, augue nam non eros donec. Id varius amet sed laoreet lorem lectus. Diam eu ipsum, enim etiam eu sit, orci sed pellentesque, porttitor arcu commodo placerat rutrum lectus eleifend, iaculis gravida. Luctus auctor pretium dui, odit purus praesent pellentesque, eu fringilla lacus. Nullam risus placerat proin, eros ut mauris imperdiet, praesent vestibulum, erat gravida justo gravida ligula maecenas imperdiet. Tempor arcu, vestibulum lectus varius mauris dictumst, adipiscing maecenas nisl proin diam, urna sed. Ut scelerisque purus nisl scelerisque iaculis quam. Nisl varius felis, sapien integer molestie integer laborum aliquam, volutpat aliquam nibh mauris dictumst. Vivamus sociis tempor massa ea, imperdiet pellentesque donec tincidunt, rhoncus magna leo amet justo feugiat ante.
+     </p>
+     <p>
+At curabitur fusce nibh, et elit reiciendis elit curabitur, justo praesent euismod amet. Interdum laoreet fames suspendisse, eget amet leo rutrum, praesent velit magna morbi vel ipsum. Amet augue. Elit nulla. Mi integer in velit morbi, mauris ligula est perferendis est et bibendum, dolor vulputate purus vel curabitur id, dolores sit dis nunc sed, eget nisl tellus. Duis non. Enim molestie nunc lacus magna nam augue, interdum integer lorem aut ligula pellentesque.
+     </p>
+   </div>
+  </th>
+
+<% if logged_in? %>
+  <tr>
+  <div class="pagination">
+
+      <h3>Welcome <%= current_user.username %> </h3><br />
+      <%= paginate @users %><br />
+      <% for users in @users%>
+        <%= link_to users.username, users %><br />
+      <% end %>
+
+    </div>
+  </tr>
+<% end %>
+</table>

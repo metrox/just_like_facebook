@@ -1,0 +1,103 @@
+#logout {
+  float: right;
+  padding-right: 1em;
+}
+.author {
+  background-color: #96C8EB;
+  width: 50%;
+  border-width: 1px;
+  border-style: dotted;
+  border-color: #000000;
+  margin-top: 2px;
+  padding-bottom: 3px;
+  margin-bottom: 1px;
+}
+
+.comment {
+  background-color: #F9F8F6;
+  width: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+  margin-bottom: 3px;
+}
+
+.destroy {
+  float: right;
+
+}
+
+.profil_name {
+  background-color: #CDE8D5;
+  width: 90%;
+  height: 50px;
+  color: #000000;
+  font-size: 20px;
+}
+
+p {
+  text-indent: 20px;
+  margin-top: 5px;
+  text-align: justify;
+}
+
+.content {
+  background-color: #D6E1E8;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #A4A7B3;
+  margin-top: 10px;
+  float: left;
+
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #327CCB; 
+  font-family: Verdana, Geneva, Arial;
+  font-size: 15px;
+}
+
+.pagination {
+  float: right;
+  padding-right: 1px;
+  margin-left: 2px;
+}
+
+.logo {
+  background-color: #A4A7B3;
+  border: none;
+  width: 100%;
+  height: 80px;
+}
+
+.logo p {
+  color: #D6E1E8;
+  font-size: 30px;
+  margin-top: 30px;
+}
+hr {
+  background-color: #A4A7B3;
+  border: none;
+  height: 1px;
+  width: 100%;
+}
+.main{
+  float: left;
+  width: 60%;
+}
+.komcie {
+  width: 60%;
+}
+.friends {
+  float: center;
+  padding-right: 10px;
+}
+
+.add_friend {
+  width: 15%;
+  height: 10%;
+  float: right;
+  padding-right: 25%;
+  padding-top: 0%;
+}
