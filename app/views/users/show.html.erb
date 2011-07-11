@@ -50,7 +50,7 @@ Witaj panie: <%= current_user.username %><br />
 
    <!-- Dodawanie do znajomych -->
   
-  <% if friends_profil == '0' %>
+  <% if friends_profil == '0' && current_user != @profil.id %>
    <div class="add_friend">
      <%= render 'add_to_friend' %>
    </div>
