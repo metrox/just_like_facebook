@@ -29,12 +29,8 @@ class UsersController < ApplicationController
     @id = params[:id]
     @posts = Post.where(:id_owner => @id)
     @author = User.find(@id)
-<<<<<<< HEAD
     @friendlist = Friendlist.where(:id_friend == @profil.id || :id_user == @profil.id)
-=======
     @friendlist = Friendlist.where(:id_friend == @profil.id ||  :id_user == @profil.id)
-
->>>>>>> 454cc998c5539ed6d2c06322bcd51d4db10c4b9b
     
     respond_to do |format|
       format.html # show.html.erb
