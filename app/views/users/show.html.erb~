@@ -11,7 +11,11 @@ Witaj panie: <%= current_user.username %><br />
           <%= author(post.id_sender) %>    
           <% if (current_user.id == post.id_owner) or (current_user.id == post.id_sender) %>
             <div class="destroy">
+<<<<<<< HEAD
               <%= link_to 'Destroy', post, :method => :delete, :confirm => 'Are you sure?' %>
+=======
+              <%= link_to 'Destroy', post, :method => :delete, :confirm => 'Are you sure?', :remote => "true" %>
+>>>>>>> 454cc998c5539ed6d2c06322bcd51d4db10c4b9b
 
             </div>
           <% end %>

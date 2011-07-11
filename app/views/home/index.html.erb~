@@ -27,7 +27,11 @@ At curabitur fusce nibh, et elit reiciendis elit curabitur, justo praesent euism
   <div class="pagination">
 
       <h3>Welcome <%= current_user.username %> </h3><br />
+<<<<<<< HEAD
       <%= paginate @users %><br />
+=======
+      <%= paginate @users %>
+>>>>>>> 454cc998c5539ed6d2c06322bcd51d4db10c4b9b
       <% for users in @users%>
         <%= link_to users.username, users %><br />
       <% end %>

@@ -32,6 +32,7 @@ Witaj panie: <%= current_user.username %><br />
 
 <div class="friends">
   Znajomi<br />
+<<<<<<< HEAD
   
    <!-- lista znajomych -->
    <% friends_profil = '0' %>
@@ -56,3 +57,10 @@ Witaj panie: <%= current_user.username %><br />
      <%= render 'add_to_friend' %>
    </div>
   <% end %>
+=======
+</div>
+   <% friends = friend_finder(@friendlist, @profil.id) %>
+   <% friends.each do |friend| %>
+     <%= friend.username %><br />
+   <% end %>
+>>>>>>> 454cc998c5539ed6d2c06322bcd51d4db10c4b9b

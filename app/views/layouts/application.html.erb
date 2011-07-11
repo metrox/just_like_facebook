@@ -3,13 +3,24 @@
   <head>
         <title>Simple site</title>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 454cc998c5539ed6d2c06322bcd51d4db10c4b9b
        <%= stylesheet_link_tag "application", "my_style"%>
        <%= stylesheet_link_tag "http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" %>
        <%= javascript_include_tag "http://code.jquery.com/jquery-1.5.2.min.js" %>
        <%= javascript_include_tag "http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js" %>
+<<<<<<< HEAD
        <%= javascript_include_tag "jquery-1.6.1.js" %>
        <%= stylesheet_link_tag "jquery.mobile-1.0a4.1.min.css" %>
        <!-- Potrzebne do rozwiazania konfliktu pomiedzy js rails, a jquery  -->
+=======
+
+       <%= javascript_include_tag "jquery-1.6.1.js" %>
+       <%= stylesheet_link_tag "jquery.mobile-1.0a4.1.min.css" %>
+
+>>>>>>> 454cc998c5539ed6d2c06322bcd51d4db10c4b9b
        <script type="text/javascript">var $j = jQuery.noConflict();</script>
        <%= javascript_include_tag :defaults %>
      <%= csrf_meta_tag %>
@@ -17,7 +28,10 @@
   </head>
 <body>
 
+<<<<<<< HEAD
 <!-- gorny panel -->
+=======
+>>>>>>> 454cc998c5539ed6d2c06322bcd51d4db10c4b9b
 <div data-role="page" id="page1">
   <div data-role="header" data-position="fixed">
     <h1><%= link_to 'Main', :index %></h1>
@@ -29,8 +43,13 @@
       <% end %>
   </div>
 
+<<<<<<< HEAD
 <!-- czesc wlasciwa stony-->
   <div data-role="content">
+=======
+  <div data-role="content">
+
+>>>>>>> 454cc998c5539ed6d2c06322bcd51d4db10c4b9b
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <% end %>
@@ -38,7 +57,10 @@
       <%= yield %>
   </div>
 
+<<<<<<< HEAD
 <!-- stopka -->
+=======
+>>>>>>> 454cc998c5539ed6d2c06322bcd51d4db10c4b9b
   <div data-role="footer">
    <h1>Footer Bar</h1>
    </div><!-- /footer -->
